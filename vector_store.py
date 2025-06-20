@@ -25,6 +25,5 @@ def build_vector_index(text):
 def get_top_chunks(query, model, index, chunks, k=5):
     q_vec = model.encode([query])
     _, I = index.search(np.array(q_vec), k)
-
-    # Protect against out-of-range indices
+ 
     return "\n".join([chunks[i] for i in I[0] if i < len(chunks)])

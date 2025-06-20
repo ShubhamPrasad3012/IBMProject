@@ -2,14 +2,12 @@ import requests
 import os
 from dotenv import load_dotenv
 
-# Load environment variables
 load_dotenv()
 
 API_KEY = os.getenv("WATSONX_API_KEY")
 PROJECT_ID = os.getenv("WATSONX_PROJECT_ID")
-REGION = "us-south"  # Adjust if you selected a different region
+REGION = "us-south"  
 
-# Debug env check
 print("🔐 API key loaded:", API_KEY is not None)
 print("📁 Project ID loaded:", PROJECT_ID is not None)
 

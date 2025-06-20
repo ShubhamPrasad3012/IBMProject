@@ -2,8 +2,7 @@ import streamlit as st
 from pdf_utils import extract_text_from_pdf
 from vector_store import build_vector_index, get_top_chunks
 from watsonx_client import generate_answer
-
-# Custom styling
+ 
 st.markdown("""
 <style>
 @keyframes fadeIn {
@@ -21,8 +20,7 @@ h1, h2, h3 {
 }
 </style>
 """, unsafe_allow_html=True)
-
-# Header banner
+ 
 st.markdown("""
 <div style='
     background: linear-gradient(to right, #ff416c, #ff4b2b);
@@ -38,8 +36,7 @@ st.markdown("""
 🧠 Chat with Your Notes
 </div>
 """, unsafe_allow_html=True)
-
-# Title
+ 
 st.markdown(
     """
     <style>
@@ -57,8 +54,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
-# Upload PDF
+ 
 uploaded_pdf = st.file_uploader("📄 Upload a PDF", type="pdf")
 
 if uploaded_pdf:
@@ -67,13 +63,11 @@ if uploaded_pdf:
     index, chunks, model = build_vector_index(text)
 
     st.markdown("### 🤔 Ask something about your notes:")
-
-    # Form for question + submit button
+ 
     with st.form(key="qa_form"):
         user_question = st.text_input("Your question...", placeholder="e.g., give summary of pdf")
         submit_btn = st.form_submit_button("Submit")
-
-    # Handle the submit
+ 
     if submit_btn and user_question:
         with st.spinner("🔍 Thinking..."):
             context = get_top_chunks(user_question, model, index, chunks, k=5)
@@ -98,8 +92,7 @@ if uploaded_pdf:
             """,
             unsafe_allow_html=True
         )
-
-# Footer
+ 
 st.markdown("""
 <hr style="margin-top: 3rem;">
 <small>
