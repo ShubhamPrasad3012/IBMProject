@@ -3,3 +3,4 @@ PyMuPDF
 faiss-cpu
 sentence-transformers
 requests
+langchain>=0.1.0
