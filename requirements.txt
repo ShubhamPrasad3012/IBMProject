@@ -1,6 +1,7 @@
 streamlit
 PyMuPDF
 faiss-cpu
+python-dotenv
 sentence-transformers
 requests
 langchain>=0.1.0
