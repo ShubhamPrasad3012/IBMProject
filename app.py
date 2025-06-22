@@ -71,17 +71,13 @@ input, textarea {
 }
 </style>
 """, unsafe_allow_html=True)
-
-# Header
+ 
 st.markdown("<div class='header'>📝 Chat with Your Notes</div>", unsafe_allow_html=True)
-
-
-# Upload
+ 
 st.markdown("<div class='section'>", unsafe_allow_html=True)
 uploaded_pdf = st.file_uploader("📄 Upload your PDF Notes", type="pdf")
 st.markdown("</div>", unsafe_allow_html=True)
-
-# Process PDF
+ 
 if uploaded_pdf:
     st.success("✅ PDF uploaded. Extracting text...")
     text = extract_text_from_pdf(uploaded_pdf)
@@ -103,8 +99,7 @@ if uploaded_pdf:
         st.markdown("### 💬 Answer:")
         st.markdown(f"<p>{answer}</p>", unsafe_allow_html=True)
         st.markdown("</div>", unsafe_allow_html=True)
-
-# Footer
+ 
 st.markdown(""" 
 <hr style="margin-top: 3rem; border: 0.5px solid #eee;">
 <p style="text-align:center; font-size: 0.85rem; color: #666;">
