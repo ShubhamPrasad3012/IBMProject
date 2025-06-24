@@ -4,6 +4,8 @@ A Generative AI-powered chatbot that lets you upload a **PDF**, extract its text
 
 ---
 
+Deployed Link - https://prasadnotebot.streamlit.app/
+
 ## Features
 
 - 📄 Upload and read content from any PDF
