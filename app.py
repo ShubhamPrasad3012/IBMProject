@@ -72,7 +72,7 @@ input, textarea {
 </style>
 """, unsafe_allow_html=True)
  
-st.markdown("<div class='header'>📝 Chat with Your Notes shubham </div>", unsafe_allow_html=True)
+st.markdown("<div class='header'>📝 Chat with Your Notes </div>", unsafe_allow_html=True)
  
 st.markdown("<div class='section'>", unsafe_allow_html=True)
 uploaded_pdf = st.file_uploader("📄 Upload your PDF Notes", type="pdf")
