@@ -6,6 +6,7 @@ import numpy as np
 def build_vector_index(text):
     splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
     chunks = splitter.split_text(text)
+    # Shubham Prasad
 
     if not chunks:
         raise ValueError("No text chunks generated. Input text may be empty or invalid.")

@@ -72,7 +72,7 @@ input, textarea {
 </style>
 """, unsafe_allow_html=True)
  
-st.markdown("<div class='header'>📝 Chat with Your Notes</div>", unsafe_allow_html=True)
+st.markdown("<div class='header'>📝 Chat with Your Notes shubham </div>", unsafe_allow_html=True)
  
 st.markdown("<div class='section'>", unsafe_allow_html=True)
 uploaded_pdf = st.file_uploader("📄 Upload your PDF Notes", type="pdf")
@@ -103,6 +103,7 @@ if uploaded_pdf:
 st.markdown(""" 
 <hr style="margin-top: 3rem; border: 0.5px solid #eee;">
 <p style="text-align:center; font-size: 0.85rem; color: #666;">
-🚀 Made with ❤️ using IBM Watsonx & Streamlit
+🚀 Made with ❤️ using IBM Watsonx & Streamlit<br>
+<span style="font-weight:600;">– by Shubham Prasad</span>
 </p>
 """, unsafe_allow_html=True)
