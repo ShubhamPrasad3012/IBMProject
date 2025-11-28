@@ -1,1 +1,24 @@
+# Virtual environment directory
+venv/
 .venv/
+
+# Python compiled/cache files
+__pycache__/
+*.pyc
+
+# Environment variables (like your .env file)
+.env
+
+# OS-generated files
+.DS_Store
+
+# Any other large, generated, or dependency folders
+# (Look for the folders with many files in your changes list)
+
+# Ignore the specific virtual environment directory
+venv310/ 
+
+# You should also keep general Python ignores
+__pycache__/
+*.pyc
+.env

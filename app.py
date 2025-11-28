@@ -3,6 +3,7 @@ from pdf_utils import extract_text_from_pdf
 from vector_store import build_vector_index, get_top_chunks
 from watsonx_client import generate_answer
 
+
 st.markdown("""
 <style>
 body {
