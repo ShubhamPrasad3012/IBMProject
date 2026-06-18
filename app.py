@@ -7,7 +7,7 @@ from watsonx_client import generate_answer
 st.markdown("""
 <style>
 body {
-    margin: 0;
+    margin: 0;      
     padding: 0;
     background: linear-gradient(to right top, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb, #a6c1ee);
     background-attachment: fixed;

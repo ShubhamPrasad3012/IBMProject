@@ -28,7 +28,7 @@ def generate_answer(question, context):
    
     # Initialize the model
     model = Model(
-        model_id="ibm/granite-3-3-8b-instruct",
+        model_id="mistralai/mistral-small-3-1-24b-instruct-2503",
         params=parameters,
         credentials=credentials,
         project_id=PROJECT_ID
