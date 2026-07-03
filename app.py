@@ -1,7 +1,7 @@
 import streamlit as st
 from pdf_utils import extract_text_from_pdf
 from vector_store import build_vector_index, get_top_chunks
-from watsonx_client import generate_answer
+from gemini_client import generate_answer
 
 
 st.markdown("""
@@ -97,14 +97,14 @@ if uploaded_pdf:
             answer = generate_answer(user_question, context)
 
         st.markdown("<div class='answer-box'>", unsafe_allow_html=True)
-        st.markdown("### 💬 Answer:")
+        st.markdown("### Answer:")
         st.markdown(f"<p>{answer}</p>", unsafe_allow_html=True)
         st.markdown("</div>", unsafe_allow_html=True)
  
 st.markdown(""" 
 <hr style="margin-top: 3rem; border: 0.5px solid #eee;">
 <p style="text-align:center; font-size: 0.85rem; color: #666;">
-🚀 Made with ❤️ using IBM Watsonx & Streamlit<br>
+Made with ❤️ using Gemini API & Streamlit<br>
 <span style="font-weight:600;">– by Shubham Prasad</span>
 </p>
 """, unsafe_allow_html=True)

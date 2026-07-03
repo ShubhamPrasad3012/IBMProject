@@ -21,4 +21,4 @@ venv310/
 # You should also keep general Python ignores
 __pycache__/
 *.pyc
-.env
+.env.env
